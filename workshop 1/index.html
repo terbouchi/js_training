@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- off on light -->
+    <button id="off" onclick="document.getElementById('img').src='./off.jpg'">off</button>
+    <img src="./off.jpg" id="img" alt="light" style="width: 40%;">
+    <button id="on" onclick="document.getElementById('img').src='./on.jpg'">on</button>
+
+    <br>
+    <br>
+
+    <!-- Print page  -->
+    <button onclick="print_current_page()">click to print this page</button>
+    <script>
+        function print_current_page() {
+            window.print();
+        }
+    </script>
+
+
+
+</body>
+
+
+
+</html>
+
+<!-- document.getElementById('myImage') -->
